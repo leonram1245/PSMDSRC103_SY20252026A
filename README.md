@@ -10,7 +10,7 @@
 
 ###
 
-<p align="left">✨ Creating bugs since 2021<br>📚 I'm currently learning Python<br>🎯 Goals: To be proficien in Python<br>🎲 Fun fact: I like sleeping and video games</p>
+<p align="left">✨ Creating bugs since 2021<br>📚 I'm currently learning Python<br>🎯 Goals: To be proficient in Python<br>🎲 Fun fact: I like sleeping and video games</p>
 
 ###
 
