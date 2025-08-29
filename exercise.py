@@ -13,8 +13,8 @@
 # Min: <min>
 # Max: <max>
 def find_max(numbers):
-    if len(numbers) == 0:
-        return "NO NUMBERS FOUND"
+    if not numbers:
+        return None
     elif len(numbers) == 1:
         return numbers[0]
     max_number = numbers[0]
@@ -24,8 +24,8 @@ def find_max(numbers):
     return max_number
 
 def find_min(numbers):
-    if len(numbers) == 0:
-        return "NO NUMBERS FOUND"
+    if not numbers:
+        return None
     elif len(numbers) == 1:
         return numbers[0]
     min_number = numbers[0]
@@ -35,19 +35,19 @@ def find_min(numbers):
     return min_number
 
 def find_total(numbers):
+    if not numbers:
+        return None
     total = 0
-    if len(numbers) == 0:
-        return "NO NUMBERS FOUND"
     for num in numbers:
         total+=num
     return total
 
 def find_count(numbers):
     count = 0
-    if len(numbers) == 0:
-        return "NO NUMBERS FOUND"
-    for i in range(len(numbers)+1):
-        count = i
+    if not numbers:
+        return None
+    for _ in numbers:
+        count +=1
     return count
 
 
@@ -56,8 +56,7 @@ while True:
     line = input("Enter your numbers: ")
     if not line:
         continue
-    elif line[0] == "#   ":
-        print(line[0])
+    elif line[0] == "#":
         continue
     elif line.lower()!="done":
         try:
