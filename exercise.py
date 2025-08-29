@@ -15,8 +15,6 @@
 def find_max(numbers):
     if not numbers:
         return None
-    elif len(numbers) == 1:
-        return numbers[0]
     max_number = numbers[0]
     for i in range(1, len(numbers)):
         if numbers[i] > max_number:
@@ -26,8 +24,6 @@ def find_max(numbers):
 def find_min(numbers):
     if not numbers:
         return None
-    elif len(numbers) == 1:
-        return numbers[0]
     min_number = numbers[0]
     for i in range(1, len(numbers)):
         if numbers[i] < min_number:
